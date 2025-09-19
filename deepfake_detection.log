@@ -1,0 +1,423 @@
+2025-09-19 11:14:47,629 - WARNING: No pre-trained model found. Training a new one...
+2025-09-19 11:14:47,629 - INFO: Training a new model...
+2025-09-19 11:14:47,630 - INFO: Model training completed
+2025-09-19 11:14:47,630 - INFO: Extracting audio from path/to/your/video.mp4...
+2025-09-19 11:14:47,860 - ERROR: Error extracting audio: zero-size array to reduction operation minimum which has no identity
+2025-09-19 11:14:47,861 - ERROR: Error processing video: Failed to extract audio
+2025-09-19 11:14:47,861 - ERROR: Fatal error: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 326, in main
+    result = pipeline.process_video(args.video)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 202, in process_video
+    if 'audio_path' in locals() and os.path.exists(audio_path):
+  File "C:\Program Files\Python310\lib\genericpath.py", line 19, in exists
+    os.stat(path)
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+2025-09-19 11:15:02,982 - WARNING: No pre-trained model found. Training a new one...
+2025-09-19 11:15:02,982 - INFO: Training a new model...
+2025-09-19 11:15:02,982 - INFO: Model training completed
+2025-09-19 11:15:02,982 - WARNING: No video files found in data
+2025-09-19 11:16:15,131 - WARNING: No pre-trained model found. Training a new one...
+2025-09-19 11:16:15,132 - INFO: Training a new model...
+2025-09-19 11:16:15,132 - INFO: Model training completed
+2025-09-19 11:16:15,132 - WARNING: No video files found in data
+2025-09-19 11:18:13,496 - INFO: Loading model from models/optimized_deepfake_model_20250917_091947.pkl
+2025-09-19 11:18:15,480 - INFO: Model loaded successfully
+2025-09-19 11:18:15,481 - WARNING: No video files found in data
+2025-09-19 11:18:27,098 - WARNING: No pre-trained model found. Training a new one...
+2025-09-19 11:18:27,098 - INFO: Training a new model...
+2025-09-19 11:18:27,098 - INFO: Model training completed
+2025-09-19 11:18:27,098 - INFO: Extracting audio from my_video.mp4...
+2025-09-19 11:18:29,139 - INFO: Extracting video frames...
+2025-09-19 11:18:30,901 - INFO: Extracting audio features...
+2025-09-19 11:18:42,661 - ERROR: Error processing video: No audio features extracted
+2025-09-19 11:18:42,662 - INFO: Processing completed in 15.56 seconds
+2025-09-19 11:18:43,008 - INFO: Report saved to reports\report_my_video.mp4_20250919_111843.json
+2025-09-19 11:19:31,564 - INFO: Loading model from models/ultimate_deepfake_model.pkl
+2025-09-19 11:19:31,567 - ERROR: Error loading model: list indices must be integers or slices, not str
+2025-09-19 11:19:31,568 - ERROR: Fatal error: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 321, in main
+    pipeline = EnhancedDeepTrustPipeline(model_path=args.model)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 40, in __init__
+    self._load_model()
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 48, in _load_model
+    self.model = model_data['model']
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\ensemble\_base.py", line 158, in __getitem__
+    return self.estimators_[index]
+TypeError: list indices must be integers or slices, not str
+2025-09-19 11:20:54,543 - INFO: Loading model from models/optimized_deepfake_model_20250917_091947.pkl
+2025-09-19 11:20:56,308 - INFO: Model loaded successfully
+2025-09-19 11:20:56,308 - INFO: Extracting audio from my_video.mp4...
+2025-09-19 11:20:58,408 - INFO: Extracting video frames...
+2025-09-19 11:21:00,197 - INFO: Extracting audio features...
+2025-09-19 11:21:13,335 - ERROR: Error processing video: No audio features extracted
+2025-09-19 11:21:13,338 - INFO: Processing completed in 17.03 seconds
+2025-09-19 11:21:13,658 - INFO: Report saved to reports\report_my_video.mp4_20250919_112113.json
+2025-09-19 11:29:06,086 - INFO: Loading model from models/ultimate_deepfake_model.pkl
+2025-09-19 11:29:06,091 - ERROR: Error loading model: list indices must be integers or slices, not str
+2025-09-19 11:29:06,092 - ERROR: Fatal error: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 241, in main
+    pipeline = EnhancedDeepTrustPipeline(model_path=args.model)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 40, in __init__
+    self._load_model()
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 48, in _load_model
+    self.model = model_data['model']
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\ensemble\_base.py", line 158, in __getitem__
+    return self.estimators_[index]
+TypeError: list indices must be integers or slices, not str
+2025-09-19 11:38:21,753 - INFO: Loading model from models/ultimate_deepfake_model.pkl
+2025-09-19 11:38:21,759 - ERROR: Error loading model: list indices must be integers or slices, not str
+2025-09-19 11:38:21,761 - ERROR: Fatal error: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 241, in main
+    pipeline = EnhancedDeepTrustPipeline(model_path=args.model)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 40, in __init__
+    self._load_model()
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 48, in _load_model
+    self.model = model_data['model']
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\ensemble\_base.py", line 158, in __getitem__
+    return self.estimators_[index]
+TypeError: list indices must be integers or slices, not str
+2025-09-19 11:44:41,845 - WARNING: No pre-trained model found. Training a new one...
+2025-09-19 11:44:41,845 - INFO: Training a new model...
+2025-09-19 11:44:41,845 - INFO: Model training completed
+2025-09-19 11:44:41,845 - INFO: Extracting audio from my_video.mp4...
+2025-09-19 11:44:45,053 - INFO: Extracting video frames...
+2025-09-19 11:44:47,320 - INFO: Extracting audio features...
+2025-09-19 11:45:00,688 - ERROR: Error processing video: No audio features extracted
+2025-09-19 11:45:00,688 - INFO: Processing completed in 18.84 seconds
+2025-09-19 11:45:00,782 - ERROR: Fatal error: 'EnhancedDeepTrustPipeline' object has no attribute '_save_report'
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 257, in main
+    report_path = pipeline._save_report(result)
+AttributeError: 'EnhancedDeepTrustPipeline' object has no attribute '_save_report'
+2025-09-19 11:52:34,166 - INFO: Loading model from models/optimized_deepfake_model.pkl
+2025-09-19 11:52:34,167 - ERROR: Error loading model: No module named 'numpy._core'
+2025-09-19 11:52:34,167 - ERROR: Fatal error: No module named 'numpy._core'
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 241, in main
+    pipeline = EnhancedDeepTrustPipeline(model_path=args.model)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 40, in __init__
+    self._load_model()
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 47, in _load_model
+    model_data = joblib.load(self.model_path)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\joblib\numpy_pickle.py", line 658, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\joblib\numpy_pickle.py", line 577, in _unpickle
+    obj = unpickler.load()
+  File "C:\Program Files\Python310\lib\pickle.py", line 1213, in load
+    dispatch[key[0]](self)
+  File "C:\Program Files\Python310\lib\pickle.py", line 1538, in load_stack_global
+    self.append(self.find_class(module, name))
+  File "C:\Program Files\Python310\lib\pickle.py", line 1580, in find_class
+    __import__(module, level=0)
+ModuleNotFoundError: No module named 'numpy._core'
+2025-09-19 12:40:28,055 - INFO: Loading model from models/ultimate_deepfake_model.pkl
+2025-09-19 12:40:28,064 - ERROR: Error loading model: list indices must be integers or slices, not str
+2025-09-19 12:40:28,064 - ERROR: Fatal error: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 241, in main
+    pipeline = EnhancedDeepTrustPipeline(model_path=args.model)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 40, in __init__
+    self._load_model()
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 48, in _load_model
+    self.model = model_data['model']
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\ensemble\_base.py", line 158, in __getitem__
+    return self.estimators_[index]
+TypeError: list indices must be integers or slices, not str
+2025-09-19 13:27:06,588 - INFO: Loading model from models/ultimate_deepfake_model.pkl
+2025-09-19 13:27:06,596 - ERROR: Error loading model: list indices must be integers or slices, not str
+2025-09-19 13:27:06,596 - ERROR: Fatal error: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "c:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 241, in main
+    pipeline = EnhancedDeepTrustPipeline(model_path=args.model)
+  File "c:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 40, in __init__
+    self._load_model()
+  File "c:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 48, in _load_model
+    self.model = model_data['model']
+  File "c:\Users\bisht\OneDrive\Desktop\deeptrust model\venv_final\lib\site-packages\sklearn\ensemble\_base.py", line 158, in __getitem__
+    return self.estimators_[index]
+TypeError: list indices must be integers or slices, not str
+2025-09-19 13:28:37,547 - INFO: Loading model from models/optimized_deepfake_model.pkl
+2025-09-19 13:28:37,569 - INFO: Model loaded successfully
+2025-09-19 13:28:37,581 - INFO: Extracting audio from data/real/video1.mp4...
+2025-09-19 13:28:37,585 - ERROR: Error extracting audio: No module named 'moviepy'
+2025-09-19 13:28:37,586 - ERROR: Error processing video: Failed to extract audio
+2025-09-19 13:28:37,587 - INFO: Processing completed in 0.01 seconds
+2025-09-19 13:28:37,605 - ERROR: Fatal error: 'EnhancedDeepTrustPipeline' object has no attribute '_save_report'
+Traceback (most recent call last):
+  File "c:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 257, in main
+    report_path = pipeline._save_report(result)
+AttributeError: 'EnhancedDeepTrustPipeline' object has no attribute '_save_report'
+2025-09-19 13:30:42,965 - INFO: Loading model from models/optimized_deepfake_model.pkl
+2025-09-19 13:30:43,019 - INFO: Model loaded successfully
+2025-09-19 13:30:43,023 - INFO: Extracting audio from data/real/video1.mp4...
+2025-09-19 13:30:46,264 - ERROR: Error extracting audio: No module named 'moviepy.editor'
+2025-09-19 13:30:46,267 - ERROR: Error processing video: Failed to extract audio
+2025-09-19 13:30:46,267 - INFO: Processing completed in 3.24 seconds
+2025-09-19 13:31:40,745 - INFO: Loading model from models/optimized_deepfake_model.pkl
+2025-09-19 13:31:40,764 - INFO: Model loaded successfully
+2025-09-19 13:31:40,778 - INFO: Extracting audio from data/real/video1.mp4...
+2025-09-19 13:31:41,021 - ERROR: Error extracting audio: No module named 'moviepy.editor'
+2025-09-19 13:31:41,021 - ERROR: Error processing video: Failed to extract audio
+2025-09-19 13:31:41,021 - INFO: Processing completed in 0.24 seconds
+2025-09-19 13:33:17,136 - INFO: Loading model from models/optimized_deepfake_model.pkl
+2025-09-19 13:33:17,163 - INFO: Model loaded successfully
+2025-09-19 13:33:17,165 - INFO: Extracting audio from data/real/video1.mp4...
+2025-09-19 13:33:17,380 - ERROR: MoviePy not properly installed. Try: pip install moviepy
+2025-09-19 13:33:17,380 - ERROR: Import error details: No module named 'moviepy.editor'
+2025-09-19 13:33:17,381 - WARNING: Audio extraction failed, continuing with video analysis only
+2025-09-19 13:33:17,381 - INFO: Extracting video frames...
+2025-09-19 13:33:23,752 - INFO: Extracting audio features...
+2025-09-19 13:33:43,814 - ERROR: Error processing video: No audio features extracted
+2025-09-19 13:33:43,814 - INFO: Processing completed in 26.65 seconds
+2025-09-19 13:37:04,867 - INFO: Loading model from models/optimized_deepfake_model.pkl
+2025-09-19 13:37:04,904 - INFO: Model loaded successfully
+2025-09-19 13:37:04,904 - INFO: Extracting audio from data/real/video1.mp4...
+2025-09-19 13:37:05,155 - ERROR: MoviePy not properly installed. Try: pip install moviepy
+2025-09-19 13:37:05,155 - ERROR: Import error details: No module named 'moviepy.editor'
+2025-09-19 13:37:05,155 - WARNING: Audio extraction failed, continuing with video analysis only
+2025-09-19 13:37:05,155 - INFO: Extracting video frames...
+2025-09-19 13:37:13,694 - WARNING: No audio available, using video features only
+2025-09-19 13:37:13,696 - INFO: Extracting visual features...
+2025-09-19 13:37:13,696 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,696 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,696 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,696 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,696 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,696 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,696 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,699 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,699 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,699 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,700 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,705 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,705 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,705 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,705 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,705 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,705 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:37:13,705 - WARNING: No visual features extracted, using default values
+2025-09-19 13:37:13,705 - INFO: Making prediction...
+2025-09-19 13:37:13,705 - ERROR: Error processing video: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-09-19 13:37:13,705 - INFO: Processing completed in 8.80 seconds
+2025-09-19 13:37:27,306 - INFO: Loading model from models/advanced_model.pkl
+2025-09-19 13:37:27,339 - ERROR: Error loading model: list indices must be integers or slices, not str
+2025-09-19 13:37:27,339 - ERROR: Fatal error: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "c:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 333, in main
+    pipeline = EnhancedDeepTrustPipeline(model_path=args.model)
+  File "c:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 40, in __init__
+    self._load_model()
+  File "c:\Users\bisht\OneDrive\Desktop\deeptrust model\run_enhanced_detection.py", line 48, in _load_model
+    self.model = model_data['model']
+  File "c:\Users\bisht\OneDrive\Desktop\deeptrust model\venv_final\lib\site-packages\sklearn\ensemble\_base.py", line 158, in __getitem__
+    return self.estimators_[index]
+TypeError: list indices must be integers or slices, not str
+2025-09-19 13:39:19,555 - WARNING: No pre-trained model found. Training a new one...
+2025-09-19 13:39:19,558 - INFO: Training a new model...
+2025-09-19 13:39:19,558 - INFO: Model training completed
+2025-09-19 13:39:19,558 - INFO: Extracting audio from data/real/video1.mp4...
+2025-09-19 13:39:19,778 - ERROR: MoviePy not properly installed. Try: pip install moviepy
+2025-09-19 13:39:19,778 - ERROR: Import error details: No module named 'moviepy.editor'
+2025-09-19 13:39:19,779 - WARNING: Audio extraction failed, continuing with video analysis only
+2025-09-19 13:39:19,779 - INFO: Extracting video frames...
+2025-09-19 13:39:25,425 - WARNING: No audio available, using video features only
+2025-09-19 13:39:25,425 - INFO: Extracting visual features...
+2025-09-19 13:39:25,428 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,428 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,428 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,428 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,428 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,430 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,431 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,436 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,436 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,436 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,437 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,437 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,438 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,438 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,438 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,439 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,439 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,439 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,441 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,441 - WARNING: Error extracting visual features from frame: 'FeatureExtractor' object has no attribute 'extract_visual_features'
+2025-09-19 13:39:25,441 - WARNING: No visual features extracted, using default values
+2025-09-19 13:39:25,441 - ERROR: Error processing video: No model available for prediction
+2025-09-19 13:39:25,441 - INFO: Processing completed in 5.88 seconds
+2025-09-19 13:50:53,273 - INFO: Loading model from backup\optimized_deepfake_model.pkl
+2025-09-19 13:50:55,275 - ERROR: Error loading model file: No module named 'numpy._core'
+2025-09-19 13:50:55,275 - WARNING: Creating a new model...
+2025-09-19 13:50:55,275 - INFO: Creating a new RandomForest model with default parameters...
+2025-09-19 13:50:55,279 - INFO: New model created and saved to backup\optimized_deepfake_model.pkl
+2025-09-19 13:50:55,281 - INFO: Extracting audio from data\real\video1.mp4...
+2025-09-19 13:50:58,200 - INFO: Extracting video frames...
+2025-09-19 13:51:02,744 - INFO: Extracting audio features...
+2025-09-19 13:51:29,859 - INFO: Extracting visual features...
+2025-09-19 13:51:33,437 - ERROR: Error processing video: 'RandomForestClassifier' object has no attribute 'estimators_'
+2025-09-19 13:51:33,439 - INFO: Processing completed in 38.16 seconds
+2025-09-19 13:56:21,815 - INFO: Loading model from backup/optimized_deepfake_model.pkl
+2025-09-19 13:56:21,815 - INFO: Model loaded successfully. Type: RandomForestClassifier
+2025-09-19 13:56:21,823 - INFO: Extracting audio from data/real/video1.mp4...
+2025-09-19 13:56:22,773 - INFO: Extracting video frames...
+2025-09-19 13:56:27,301 - INFO: Extracting audio features...
+2025-09-19 13:56:48,244 - INFO: Extracted 0 audio features
+2025-09-19 13:56:48,245 - INFO: Extracting visual features...
+2025-09-19 13:56:51,029 - INFO: Processed 10/30 frames
+2025-09-19 13:56:51,960 - INFO: Processed 20/30 frames
+2025-09-19 13:56:52,869 - INFO: Processed 30/30 frames
+2025-09-19 13:56:52,869 - INFO: Combined 5 features
+2025-09-19 13:56:52,869 - ERROR: Error processing video: 'RandomForestClassifier' object has no attribute 'estimators_'
+2025-09-19 13:56:52,869 - INFO: Processing completed in 31.05 seconds
+2025-09-19 14:24:19,349 - INFO: Loading model from backup/optimized_deepfake_model.pkl
+2025-09-19 14:24:19,349 - INFO: Model data keys: ['model', 'feature_columns', 'scaler', 'model_type', 'version']
+2025-09-19 14:24:19,349 - INFO: Loaded model with 5 feature columns
+2025-09-19 14:24:19,349 - INFO: Model loaded successfully. Type: RandomForestClassifier
+2025-09-19 14:24:19,354 - INFO: Extracting audio from data/real/video1.mp4...
+2025-09-19 14:24:19,942 - INFO: Extracting video frames...
+2025-09-19 14:24:22,831 - INFO: Extracting audio features...
+2025-09-19 14:24:32,546 - INFO: Extracted 0 audio features
+2025-09-19 14:24:32,546 - INFO: Extracting visual features...
+2025-09-19 14:24:34,981 - INFO: Processed 10/30 frames
+2025-09-19 14:24:35,699 - INFO: Processed 20/30 frames
+2025-09-19 14:24:36,398 - INFO: Processed 30/30 frames
+2025-09-19 14:24:36,399 - INFO: Combined 5 features
+2025-09-19 14:24:36,399 - ERROR: Error processing video: 'RandomForestClassifier' object has no attribute 'estimators_'
+2025-09-19 14:24:36,399 - INFO: Processing completed in 17.04 seconds
+2025-09-19 14:25:54,024 - INFO: Loading model from models/new_model.pkl
+2025-09-19 14:25:54,082 - INFO: Model data keys: ['model', 'feature_columns', 'scaler', 'model_type', 'version']
+2025-09-19 14:25:54,083 - INFO: Loaded model with 5 feature columns
+2025-09-19 14:25:54,083 - INFO: Model loaded successfully. Type: RandomForestClassifier
+2025-09-19 14:25:54,084 - INFO: Extracting audio from data/real/video1.mp4...
+2025-09-19 14:25:55,916 - INFO: Extracting video frames...
+2025-09-19 14:26:03,974 - INFO: Extracting audio features...
+2025-09-19 14:26:03,976 - INFO: Extracted 0 audio features
+2025-09-19 14:26:03,976 - INFO: Extracting visual features...
+2025-09-19 14:26:11,677 - INFO: Processed 10/30 frames
+2025-09-19 14:26:13,341 - INFO: Processed 20/30 frames
+2025-09-19 14:26:15,104 - INFO: Processed 30/30 frames
+2025-09-19 14:26:15,106 - INFO: Combined 5 features
+2025-09-19 14:26:15,106 - INFO: Preparing features for prediction...
+2025-09-19 14:26:15,106 - INFO: Model expects 5 features
+2025-09-19 14:26:15,811 - INFO: Final feature vector shape: (5,)
+2025-09-19 14:26:15,811 - WARNING: No scaler found, using raw features
+2025-09-19 14:26:15,811 - INFO: Making prediction...
+2025-09-19 14:26:15,829 - INFO: Prediction: FAKE with confidence: 0.60
+2025-09-19 14:26:15,831 - INFO: Processing completed in 21.75 seconds
+2025-09-19 14:31:44,025 - INFO: Loading model from models/enhanced_model.pkl
+2025-09-19 14:31:44,100 - INFO: Model data keys: ['model', 'feature_columns', 'scaler', 'model_type', 'version']
+2025-09-19 14:31:44,100 - INFO: Loaded model with 24 feature columns
+2025-09-19 14:31:44,105 - INFO: Model loaded successfully. Type: RandomForestClassifier
+2025-09-19 14:31:44,105 - INFO: Extracting audio from data/real/video1.mp4...
+2025-09-19 14:31:45,584 - INFO: Extracting video frames...
+2025-09-19 14:31:52,758 - INFO: Extracting audio features...
+2025-09-19 14:31:52,758 - INFO: Extracted 0 audio features
+2025-09-19 14:31:52,758 - INFO: Extracting visual features...
+2025-09-19 14:31:56,984 - INFO: Processed 10/30 frames
+2025-09-19 14:31:58,472 - INFO: Processed 20/30 frames
+2025-09-19 14:31:59,947 - INFO: Processed 30/30 frames
+2025-09-19 14:31:59,949 - INFO: Combined 17 features
+2025-09-19 14:31:59,949 - INFO: Preparing features for prediction...
+2025-09-19 14:31:59,949 - INFO: Model expects 24 features
+2025-09-19 14:31:59,949 - WARNING: Adding missing feature with default value: face_count
+2025-09-19 14:31:59,949 - WARNING: Adding missing feature with default value: spectral_bandwidth
+2025-09-19 14:31:59,949 - WARNING: Adding missing feature with default value: hue_mean
+2025-09-19 14:31:59,949 - WARNING: Adding missing feature with default value: texture_dissimilarity
+2025-09-19 14:31:59,954 - WARNING: Adding missing feature with default value: saturation_mean
+2025-09-19 14:31:59,954 - WARNING: Adding missing feature with default value: texture_homogeneity
+2025-09-19 14:31:59,954 - WARNING: Adding missing feature with default value: face_brightness
+2025-09-19 14:31:59,954 - WARNING: Adding missing feature with default value: edge_density
+2025-09-19 14:31:59,954 - WARNING: Adding missing feature with default value: contrast
+2025-09-19 14:31:59,954 - WARNING: Adding missing feature with default value: brightness
+2025-09-19 14:31:59,954 - WARNING: Adding missing feature with default value: blur_score
+2025-09-19 14:31:59,954 - WARNING: Adding missing feature with default value: value_mean
+2025-09-19 14:31:59,954 - WARNING: Adding missing feature with default value: face_symmetry
+2025-09-19 14:31:59,954 - WARNING: Adding missing feature with default value: mfcc_std_0
+2025-09-19 14:31:59,963 - WARNING: Adding missing feature with default value: texture_contrast
+2025-09-19 14:31:59,963 - WARNING: Adding missing feature with default value: rms
+2025-09-19 14:31:59,964 - WARNING: Adding missing feature with default value: texture_correlation
+2025-09-19 14:31:59,964 - WARNING: Adding missing feature with default value: aspect_ratio
+2025-09-19 14:31:59,964 - WARNING: Adding missing feature with default value: spectral_rolloff
+2025-09-19 14:31:59,964 - WARNING: Adding missing feature with default value: mfcc_mean_0
+2025-09-19 14:31:59,964 - WARNING: Adding missing feature with default value: face_contrast
+2025-09-19 14:31:59,964 - WARNING: Adding missing feature with default value: spectral_centroid
+2025-09-19 14:31:59,964 - WARNING: Adding missing feature with default value: zcr
+2025-09-19 14:31:59,964 - WARNING: Adding missing feature with default value: texture_energy
+2025-09-19 14:31:59,971 - INFO: Final feature vector shape: (24,)
+2025-09-19 14:31:59,971 - WARNING: No scaler found, using raw features
+2025-09-19 14:31:59,971 - INFO: Making prediction...
+2025-09-19 14:31:59,971 - ERROR: Error during prediction: X has 24 features, but RandomForestClassifier is expecting 20 features as input.
+2025-09-19 14:31:59,971 - ERROR: Error processing video: X has 24 features, but RandomForestClassifier is expecting 20 features as input.
+2025-09-19 14:31:59,975 - INFO: Processing completed in 15.87 seconds
+2025-09-19 20:20:39,294 - INFO: Loading model from models/new_deepfake_model.pkl
+2025-09-19 20:20:39,308 - INFO: Model data keys: ['model', 'feature_columns', 'scaler', 'model_type', 'version']
+2025-09-19 20:20:39,308 - INFO: Loaded model with 10 feature columns
+2025-09-19 20:20:39,308 - INFO: Model loaded successfully. Type: RandomForestClassifier
+2025-09-19 20:20:39,311 - INFO: Extracting audio from my_video.mp4...
+2025-09-19 20:20:41,613 - ERROR: MoviePy not properly installed. Try: pip install moviepy
+2025-09-19 20:20:41,613 - ERROR: Import error details: No module named 'moviepy.editor'
+2025-09-19 20:20:41,613 - WARNING: Audio extraction failed, continuing with video analysis only
+2025-09-19 20:20:41,616 - INFO: Extracting video frames...
+2025-09-19 20:20:44,026 - INFO: Extracting audio features...
+2025-09-19 20:20:44,026 - WARNING: No audio available, using video features only
+2025-09-19 20:20:44,026 - INFO: Extracting visual features...
+2025-09-19 20:20:47,081 - INFO: Processed 10/30 frames
+2025-09-19 20:20:47,668 - INFO: Processed 20/30 frames
+2025-09-19 20:20:48,300 - INFO: Processed 30/30 frames
+2025-09-19 20:20:48,301 - INFO: Combined 12 features
+2025-09-19 20:20:48,302 - INFO: Preparing features for prediction...
+2025-09-19 20:20:48,302 - INFO: Model expects 10 features
+2025-09-19 20:20:48,303 - WARNING: Adding missing feature with default value: feature_0
+2025-09-19 20:20:48,305 - WARNING: Adding missing feature with default value: feature_6
+2025-09-19 20:20:48,306 - WARNING: Adding missing feature with default value: feature_2
+2025-09-19 20:20:48,307 - WARNING: Adding missing feature with default value: feature_1
+2025-09-19 20:20:48,307 - WARNING: Adding missing feature with default value: feature_7
+2025-09-19 20:20:48,308 - WARNING: Adding missing feature with default value: feature_3
+2025-09-19 20:20:48,308 - WARNING: Adding missing feature with default value: feature_9
+2025-09-19 20:20:48,309 - WARNING: Adding missing feature with default value: feature_4
+2025-09-19 20:20:48,309 - WARNING: Adding missing feature with default value: feature_5
+2025-09-19 20:20:48,310 - WARNING: Adding missing feature with default value: feature_8
+2025-09-19 20:20:48,312 - INFO: Final feature vector shape: (10,)
+2025-09-19 20:20:48,312 - INFO: Scaling features...
+2025-09-19 20:20:48,314 - INFO: Making prediction...
+2025-09-19 20:20:48,319 - INFO: Prediction: FAKE with confidence: 0.54
+2025-09-19 20:20:48,319 - INFO: Processing completed in 9.01 seconds
+2025-09-20 01:37:23,841 - __main__ - INFO - Initializing pipeline components...
+2025-09-20 01:37:28,933 - __main__ - ERROR - Pipeline error: No module named 'moviepy.editor'
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deepfake_detection_pipeline.py", line 150, in main
+    pipeline = DeepfakeDetectionPipeline(model_path=args.model)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deepfake_detection_pipeline.py", line 44, in __init__
+    self._initialize_components()
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deepfake_detection_pipeline.py", line 71, in _initialize_components
+    from extract_features import FeatureExtractor
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\extract_features.py", line 13, in <module>
+    from moviepy.editor import VideoFileClip
+ModuleNotFoundError: No module named 'moviepy.editor'

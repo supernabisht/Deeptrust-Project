@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-09-16T02:12:53.960338",
+  "video_file": "my_video.mp4",
+  "analysis_results": {
+    "ultimate_prediction": "SUCCESS: High confidence prediction: FAKE (0.963)"
+  },
+  "errors_encountered": [
+    "Running enhanced lip-sync analysis failed with exit code 1\nError: Traceback (most recent call last):\n  File \"C:\\Users\\bisht\\OneDrive\\Desktop\\deeptrust model\\lip_sync.py\", line 766, in <module>\n    lip_frames = load_lip_frames()\n  File \"C:\\Users\\bisht\\OneDrive\\Desktop\\deeptrust model\\lip_sync.py\", line 40, in load_lip_frames\n    print(f\"\\u2705 Loaded {len(frames)} frames from {folder} using pattern: {pattern}\")\n  File \"C:\\Program Files\\Python310\\lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\nUnicodeEncodeError: 'charmap' codec can't encode character '\\u2705' in position 0: character maps to <undefined>\n"
+  ],
+  "pipeline_status": "completed_with_warnings"
+}

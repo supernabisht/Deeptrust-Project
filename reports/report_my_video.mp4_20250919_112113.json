@@ -1,0 +1,9 @@
+{
+  "filename": "my_video.mp4",
+  "prediction": "UNKNOWN",
+  "confidence": 0.0,
+  "processing_time": 17.029365301132202,
+  "features": {},
+  "error": "No audio features extracted",
+  "success": false
+}

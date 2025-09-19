@@ -1,0 +1,10 @@
+Model Training Report
+==================================================
+Training Date: 2025-09-19 23:56:07
+Model Type: StackingRegressor
+Input Shape: (84,)
+
+Performance Metrics:
+- Mean Squared Error: 0.0091
+- Mean Absolute Error: 0.0636
+- R² Score: 0.9636

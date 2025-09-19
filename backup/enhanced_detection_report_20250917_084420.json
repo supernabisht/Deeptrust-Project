@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-09-17T08:44:20.810447",
+  "video_file": "my_video.mp4",
+  "analysis_results": {},
+  "errors_encountered": [
+    "Running enhanced lip-sync analysis failed with exit code 2\nError: C:\\Program Files\\Python310\\python.exe: can't open file 'C:\\\\Users\\\\bisht\\\\OneDrive\\\\Desktop\\\\deeptrust model\\\\lip_sync.py': [Errno 2] No such file or directory\n",
+    "Final prediction failed: X has 40 features, but StandardScaler is expecting 53 features as input."
+  ],
+  "pipeline_status": "completed_with_warnings"
+}

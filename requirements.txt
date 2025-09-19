@@ -1,0 +1,37 @@
+# Core requirements
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+librosa>=0.9.0
+opencv-python>=4.5.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+scipy>=1.7.0
+joblib>=1.1.0
+tqdm>=4.62.0
+ffmpeg-python>=0.2.0
+
+# Machine learning frameworks
+xgboost>=1.5.0
+lightgbm>=3.3.0
+catboost>=1.0.0
+torch>=1.10.0  # For GPU support and advanced models
+torchvision>=0.11.0
+torchaudio>=0.10.0
+
+# Additional utilities
+imbalanced-learn>=0.9.0
+optuna>=2.10.0  # For hyperparameter optimization
+plotly>=5.3.0  # For interactive visualizations
+shap>=0.40.0  # For model interpretability
+albumentations>=1.1.0  # For data augmentation
+mlflow>=1.23.0  # For experiment tracking
+hyperopt>=0.2.7  # For hyperparameter optimization
+
+# Development tools
+pytest>=6.2.5
+black>=22.1.0
+flake8>=4.0.1
+mypy>=0.930.0
+jupyter>=1.0.0
+ipykernel>=6.6.0

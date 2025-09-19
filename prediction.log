@@ -1,0 +1,34 @@
+2025-09-20 03:52:30,567 - __main__ - INFO - Loading model from: models\ultimate_deepfake_model.pkl
+2025-09-20 03:52:47,271 - __main__ - WARNING - Loaded model doesn't contain metadata. Feature names unknown.
+2025-09-20 03:52:47,271 - __main__ - INFO - Successfully loaded model trained on unknown date
+2025-09-20 03:52:47,271 - __main__ - ERROR - Error making predictions: X has 2 features, but RandomForestClassifier is expecting 10 features as input.
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\predict.py", line 166, in predict
+    predictions = self.model.predict(X_array)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\utils\validation.py", line 2975, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\utils\validation.py", line 2839, in _check_n_features
+    raise ValueError(
+ValueError: X has 2 features, but RandomForestClassifier is expecting 10 features as input.
+2025-09-20 03:52:47,371 - __main__ - WARNING - Feature names not available or don't match importance scores.
+2025-09-20 03:52:47,472 - __main__ - ERROR - Error making predictions: X has 85 features, but RandomForestClassifier is expecting 10 features as input.
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\predict.py", line 166, in predict
+    predictions = self.model.predict(X_array)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\utils\validation.py", line 2975, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\venv\lib\site-packages\sklearn\utils\validation.py", line 2839, in _check_n_features
+    raise ValueError(
+ValueError: X has 85 features, but RandomForestClassifier is expecting 10 features as input.

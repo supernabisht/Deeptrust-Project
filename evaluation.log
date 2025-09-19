@@ -1,0 +1,119 @@
+2025-09-20 00:35:25,405 - __main__ - INFO - Loading model from: models/latest_model.pkl
+2025-09-20 00:35:25,671 - __main__ - INFO - Model type: StackingRegressor
+2025-09-20 00:35:25,671 - __main__ - INFO - Model expects 84 features
+2025-09-20 00:35:25,673 - __main__ - ERROR - Error loading model: Object of type StandardScaler is not JSON serializable
+2025-09-20 00:35:25,673 - __main__ - INFO - Loading data from data/processed/X_test.csv and data/processed/y_test.csv
+2025-09-20 00:35:25,686 - __main__ - WARNING - Feature count mismatch: Expected 84, got 85
+2025-09-20 00:35:25,686 - __main__ - WARNING - Keeping first 84 features and dropping the rest
+2025-09-20 00:35:25,691 - __main__ - INFO - Loaded 200 samples with 84 features
+2025-09-20 00:35:25,692 - __main__ - INFO - Class distribution:
+label
+0    100
+1    100
+Name: count, dtype: int64
+2025-09-20 00:35:25,692 - __main__ - INFO - Starting model evaluation...
+2025-09-20 00:35:25,699 - __main__ - ERROR - Error making predictions: Input X contains NaN.
+RandomForestRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-09-20 00:35:25,699 - __main__ - ERROR - Error during evaluation: Input X contains NaN.
+RandomForestRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-09-20 00:35:25,699 - __main__ - ERROR - Evaluation failed: Input X contains NaN.
+RandomForestRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-09-20 00:36:31,083 - __main__ - INFO - Loading model from: models/latest_model.pkl
+2025-09-20 00:36:31,383 - __main__ - INFO - Model type: StackingRegressor
+2025-09-20 00:36:31,383 - __main__ - INFO - Model expects 84 features
+2025-09-20 00:36:31,383 - __main__ - ERROR - Error loading model: Object of type StandardScaler is not JSON serializable
+2025-09-20 00:36:31,386 - __main__ - INFO - Loading data from data/processed/X_test_cleaned.csv and data/processed/y_test_cleaned.csv
+2025-09-20 00:36:31,398 - __main__ - INFO - Loaded 200 samples with 84 features
+2025-09-20 00:36:31,399 - __main__ - INFO - Class distribution:
+label
+0    100
+1    100
+Name: count, dtype: int64
+2025-09-20 00:36:31,399 - __main__ - INFO - Starting model evaluation...
+2025-09-20 00:36:31,458 - __main__ - ERROR - Error during evaluation: Classification metrics can't handle a mix of binary and continuous targets
+2025-09-20 00:36:31,461 - __main__ - ERROR - Evaluation failed: Classification metrics can't handle a mix of binary and continuous targets
+2025-09-20 00:42:40,881 - __main__ - INFO - Loading model from: models/latest_model.pkl
+2025-09-20 00:42:41,244 - __main__ - INFO - Model type: dict
+2025-09-20 00:42:41,246 - __main__ - INFO - Loading data from data/processed/X_test_cleaned.csv and data/processed/y_test_cleaned.csv
+2025-09-20 00:42:41,259 - __main__ - INFO - Loaded 200 samples with 84 features
+2025-09-20 00:42:41,259 - __main__ - INFO - Class distribution:
+label
+0    100
+1    100
+Name: count, dtype: int64
+2025-09-20 00:42:41,260 - __main__ - INFO - Starting model evaluation...
+2025-09-20 00:42:41,260 - __main__ - INFO - Making predictions...
+2025-09-20 00:42:41,260 - __main__ - ERROR - Error during evaluation: 'dict' object has no attribute 'predict'
+2025-09-20 00:42:41,260 - __main__ - ERROR - Evaluation failed: 'dict' object has no attribute 'predict'
+2025-09-20 00:47:59,616 - __main__ - INFO - Loading model from: models/optimized_deepfake_model.pkl
+2025-09-20 00:47:59,922 - __main__ - INFO - Successfully loaded classifier model
+2025-09-20 00:47:59,922 - __main__ - INFO - Model class: RandomForestClassifier
+2025-09-20 00:47:59,922 - __main__ - INFO - No feature names available
+2025-09-20 00:47:59,923 - __main__ - INFO - Loading data from data/processed/X_test_cleaned.csv and data/processed/y_test_cleaned.csv
+2025-09-20 00:47:59,962 - __main__ - INFO - Loaded 200 samples with 84 features
+2025-09-20 00:47:59,963 - __main__ - INFO - Class distribution:
+label
+0    100
+1    100
+Name: count, dtype: int64
+2025-09-20 00:47:59,963 - __main__ - INFO - Starting model evaluation...
+2025-09-20 00:47:59,963 - __main__ - INFO - Making predictions...
+2025-09-20 00:47:59,967 - __main__ - ERROR - Error during evaluation: X has 84 features, but RandomForestClassifier is expecting 53 features as input.
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\robust_deepfake_evaluator.py", line 292, in evaluate
+    y_pred_proba = self.model_info.model.predict_proba(X_test)[:, 1]
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\ensemble\_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\ensemble\_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\utils\validation.py", line 2975, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\utils\validation.py", line 2839, in _check_n_features
+    raise ValueError(
+ValueError: X has 84 features, but RandomForestClassifier is expecting 53 features as input.
+2025-09-20 00:47:59,967 - __main__ - ERROR - Evaluation failed: X has 84 features, but RandomForestClassifier is expecting 53 features as input.
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\robust_deepfake_evaluator.py", line 593, in main
+    metrics = evaluator.evaluate(X_test, y_test, threshold=args.threshold)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\robust_deepfake_evaluator.py", line 292, in evaluate
+    y_pred_proba = self.model_info.model.predict_proba(X_test)[:, 1]
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\ensemble\_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\ensemble\_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\utils\validation.py", line 2975, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\utils\validation.py", line 2839, in _check_n_features
+    raise ValueError(
+ValueError: X has 84 features, but RandomForestClassifier is expecting 53 features as input.
+2025-09-20 00:53:08,047 - __main__ - INFO - Loading model from: models/optimized_deepfake_model.pkl
+2025-09-20 00:53:08,311 - __main__ - INFO - Successfully loaded classifier model
+2025-09-20 00:53:08,311 - __main__ - INFO - Model class: RandomForestClassifier
+2025-09-20 00:53:08,311 - __main__ - WARNING - No feature names available in the model
+2025-09-20 00:53:08,311 - __main__ - INFO - Model expects 53 features
+2025-09-20 00:53:08,311 - __main__ - INFO - Loading data from data/processed/X_test_cleaned.csv and data/processed/y_test_cleaned.csv
+2025-09-20 00:53:08,311 - __main__ - INFO - Loading feature data...
+2025-09-20 00:53:08,334 - __main__ - INFO - Loaded 200 samples with 84 features
+2025-09-20 00:53:08,334 - __main__ - INFO - Loading labels...
+2025-09-20 00:53:08,336 - __main__ - INFO - Loaded 200 labels
+2025-09-20 00:53:08,336 - __main__ - INFO - Normalized labels
+2025-09-20 00:53:08,336 - __main__ - INFO - Initial data shape: (200, 84)
+2025-09-20 00:53:08,336 - __main__ - INFO - Sample features: {'mfcc_1_mean': -0.6591124203384631, 'mfcc_1_std': 1.7299346250470278, 'mfcc_2_mean': 0.6006937797933523, 'mfcc_2_std': -0.4678135836473763, 'mfcc_3_mean': 0.1266813001340682, 'mfcc_3_std': -1.249358673065212, 'mfcc_4_mean': 1.0089894918610012, 'mfcc_4_std': 1.399844516666026, 'mfcc_5_mean': 1.5400789719059311, 'mfcc_5_std': 1.125819543537975, 'mfcc_6_mean': -0.3203967151403941, 'mfcc_6_std': 0.8941453094163435, 'spectral_centroid': 1.4607373878971444, 'spectral_bandwidth': 0.9450901498472682, 'spectral_rolloff': 0.853261689329006, 'zero_crossing_rate': 0.1912448693992219, 'chroma_stft_1': -0.905864781630778, 'chroma_stft_2': 1.8553251068582688, 'chroma_stft_3': -0.0366523140045311, 'chroma_stft_4': 1.2142028459388448, 'chroma_stft_5': 2.4780060764095144, 'lip_width_mean': 0.9084252136380324, 'lip_height_mean': -0.0198645138815634, 'lip_area_mean': -0.935612555967339, 'lip_movement_std': -0.7274047828604855, 'eye_aspect_ratio': 1.264974091849015, 'mouth_aspect_ratio': -0.5495829929289825, 'facial_landmark_std': -1.341364321447207, 'optical_flow_magnitude': -1.6607878988384537, 'optical_flow_angle': -0.2166458665142798, 'temporal_consistency': 0.5707020864619536, 'frame_difference_std': 0.9978777186019054, 'motion_vectors_mean': -0.9891245930157664, 'psnr_mean': 1.3774508010330713, 'ssim_mean': -1.2126143592359462, 'blurriness_index': -1.1859647184380278, 'lip_sync_error': -1.0615431491406189, 'audio_visual_correlation': 0.053139428057045, 'feature_mismatch_score': 0.5796647738051259, 'deepfake_artifact_score': -2.6756549942573766, 'generative_adversarial_score': 0.3530661194954252, 'audio_kurtosis': -1.6781573824893123, 'audio_skewness': -2.1951793553997443, 'visual_kurtosis': 1.8280212512946072, 'visual_skewness': 1.0465541680604522, 'temporal_entropy': -0.0037318696530074, 'spectral_entropy': -2.0225853780393286, 'lip_audio_correlation': -0.4580635400208901, 'eye_blink_rate': 0.448752046768726, 'facial_symmetry_score': -0.4602237369173527, 'micro_expression_consistency': 1.5612502134815929, 'breathing_pattern_consistency': 0.6292304324842993, 'feature_52': -0.92315968170505, 'feature_53': -1.595826643486457, 'feature_54': 0.8746353492674155, 'feature_55': 0.8410287424321053, 'feature_56': 0.7560638784929621, 'feature_57': 5.714621852953629, 'feature_58': 0.4576698005870911, 'feature_59': 0.0938210632308535, 'feature_60': 0.7644639931071323, 'feature_61': 1.2347832320992451, 'feature_62': 0.6874234349630624, 'feature_63': 0.0314395356898659, 'feature_64': 0.9682759544843486, 'feature_65': 0.0961551416701577, 'feature_66': -0.4879225396482824, 'feature_67': 0.12146976681833, 'audio_feats_mean': -1.0695652124632256, 'audio_feats_std': 1.0443166239925032, 'audio_feats_skew': -0.0045552377083586, 'audio_feats_kurtosis': -3.772165558790301, 'visual_feats_mean': 0.0816895041326004, 'visual_feats_std': 1.0658864001363504, 'visual_feats_skew': 0.5591968332982483, 'visual_feats_kurtosis': -1.2006317762488252, 'mfcc_feats_mean': 0.47745884551419, 'mfcc_feats_std': 0.9708110316462776, 'mfcc_feats_range': 2.97929329811224, 'audio_visual_corr_1': 0.0482731962853239, 'audio_visual_corr_2': 0.0306762717745636, 'audio_visual_corr_3': 2.0538373675122905, 'audio_visual_corr_4': 0.3331976098652008, 'lip_consistency_score': 0.7956168921864705}
+2025-09-20 00:53:08,340 - __main__ - INFO - Label distribution:
+label
+0    100
+1    100
+Name: count, dtype: int64
+2025-09-20 00:53:08,343 - __main__ - WARNING - No feature names available in the model. Using features as-is.
+2025-09-20 00:53:08,344 - __main__ - WARNING - Selecting first 53 features to match model's expected input
+2025-09-20 00:53:08,370 - __main__ - INFO - Final dataset shape: (200, 53)
+2025-09-20 00:53:08,374 - __main__ - INFO - Final class distribution:
+label
+0    100
+1    100
+Name: count, dtype: int64
+2025-09-20 00:53:08,374 - __main__ - INFO - Starting model evaluation...
+2025-09-20 00:53:08,374 - __main__ - INFO - Making predictions...
+2025-09-20 00:53:12,062 - __main__ - INFO - Generated all visualizations
+2025-09-20 00:53:12,091 - __main__ - INFO - Saved evaluation results to evaluation_results\reports
+2025-09-20 00:53:12,091 - __main__ - INFO - Evaluation completed in 3.72 seconds

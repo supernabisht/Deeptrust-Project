@@ -1,0 +1,97 @@
+2025-09-04 23:42:53,426 - __main__ - INFO - Starting model retraining process...
+2025-09-04 23:42:53,426 - __main__ - INFO - Loading model from optimized_deepfake_model.pkl
+2025-09-04 23:42:55,582 - __main__ - INFO - Successfully loaded model with 30 features
+2025-09-04 23:42:55,586 - __main__ - INFO - Loaded continuous data: continuous_training_data.csv
+2025-09-04 23:42:55,588 - __main__ - INFO - Loaded original data: deepfake_dataset.csv
+2025-09-04 23:42:55,588 - __main__ - INFO - Processing continuous data with 2 rows
+2025-09-04 23:42:55,588 - __main__ - INFO - Validating continuous dataset with shape (2, 9)
+2025-09-04 23:42:55,588 - __main__ - INFO - Columns: ['timestamp', 'features', 'prediction', 'confidence', 'real_prob', 'fake_prob', 'user_feedback', 'video_path', 'is_correct']
+2025-09-04 23:42:55,590 - __main__ - INFO - Data types:
+timestamp         object
+features          object
+prediction        object
+confidence       float64
+real_prob        float64
+fake_prob        float64
+user_feedback    float64
+video_path        object
+is_correct       float64
+dtype: object
+2025-09-04 23:42:55,591 - __main__ - INFO - Missing values:
+timestamp        0
+features         0
+prediction       0
+confidence       0
+real_prob        0
+fake_prob        0
+user_feedback    2
+video_path       0
+is_correct       2
+dtype: int64
+2025-09-04 23:42:55,593 - __main__ - INFO - Found 2 valid rows in continuous data
+2025-09-04 23:42:55,593 - __main__ - INFO - Processing original data with 42 rows
+2025-09-04 23:42:55,594 - __main__ - INFO - Validating original dataset with shape (42, 17)
+2025-09-04 23:42:55,594 - __main__ - INFO - Columns: ['lip_mean', 'lip_std', 'lip_skew', 'lip_kurtosis', 'audio_mean', 'audio_std', 'audio_skew', 'audio_kurtosis', 'mismatch_score', 'correlation', 'cross_corr_max', 'cross_corr_lag', 'lip_peaks', 'audio_peaks', 'peak_delay', 'label', 'source']
+2025-09-04 23:42:55,595 - __main__ - INFO - Data types:
+lip_mean          float64
+lip_std           float64
+lip_skew          float64
+lip_kurtosis      float64
+audio_mean        float64
+audio_std         float64
+audio_skew        float64
+audio_kurtosis    float64
+mismatch_score    float64
+correlation       float64
+cross_corr_max    float64
+cross_corr_lag    float64
+lip_peaks         float64
+audio_peaks       float64
+peak_delay        float64
+label              object
+source             object
+dtype: object
+2025-09-04 23:42:55,595 - __main__ - INFO - Missing values:
+lip_mean          0
+lip_std           0
+lip_skew          0
+lip_kurtosis      0
+audio_mean        0
+audio_std         0
+audio_skew        0
+audio_kurtosis    0
+mismatch_score    0
+correlation       0
+cross_corr_max    0
+cross_corr_lag    0
+lip_peaks         0
+audio_peaks       0
+peak_delay        0
+label             0
+source            0
+dtype: int64
+2025-09-04 23:42:55,597 - __main__ - INFO - Found 42 valid rows in original data
+2025-09-04 23:42:55,597 - __main__ - WARNING - Missing features in original data: ['audio_feat_0', 'audio_feat_4', 'audio_feat_10', 'audio_feat_16', 'audio_feat_17', 'audio_feat_18', 'audio_feat_19', 'audio_feat_22', 'audio_feat_24', 'visual_feat_0', 'visual_feat_4', 'visual_feat_5', 'visual_feat_6', 'visual_feat_8', 'visual_feat_10', 'visual_feat_12', 'visual_feat_13', 'visual_feat_14']
+2025-09-04 23:42:55,607 - __main__ - INFO - Continuous samples: 2, Original samples: 42
+2025-09-04 23:42:55,607 - __main__ - INFO - Final training set: 44 samples
+2025-09-04 23:42:55,610 - __main__ - INFO - Training new model...
+2025-09-04 23:42:58,746 - __main__ - INFO - Cross-validation scores: [1. 1. 1. 1. 1.]
+2025-09-04 23:42:58,747 - __main__ - INFO - Mean CV accuracy: 1.000 (+/- 0.000)
+2025-09-04 23:42:58,799 - __main__ - INFO - Test accuracy: 1.000
+2025-09-04 23:42:58,805 - __main__ - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+        FAKE       1.00      1.00      1.00         5
+        REAL       1.00      1.00      1.00         4
+
+    accuracy                           1.00         9
+   macro avg       1.00      1.00      1.00         9
+weighted avg       1.00      1.00      1.00         9
+
+2025-09-04 23:42:58,805 - __main__ - INFO - Confusion Matrix:
+[[5 0]
+ [0 4]]
+2025-09-04 23:42:58,805 - __main__ - INFO - Accuracy improvement: +0.000
+2025-09-04 23:42:59,121 - __main__ - INFO - Model saved to models/retrained_model_20250904_234258.pkl and optimized_deepfake_model.pkl
+2025-09-04 23:42:59,123 - __main__ - INFO - Model updated successfully with improvement
+2025-09-04 23:42:59,123 - __main__ - INFO - Retraining process completed

@@ -1,0 +1,19 @@
+{
+    "timestamp": "20250919_105930",
+    "result": "AI-GENERATED",
+    "explanation": "The analysis detected signs of artificial generation with 20.0% confidence. However, the confidence is not very high. This could be a false positive.",
+    "confidence_score": 20.0,
+    "details": {
+        "is_ai_generated": true,
+        "real_probability": 24.0,
+        "fake_probability": 76.0,
+        "decision_threshold": 70.0
+    },
+    "metadata": {
+        "model": "Enhanced DeepTrust Model",
+        "version": "1.1",
+        "analysis_type": "Deepfake Detection",
+        "confidence_interpretation": "Higher values indicate stronger confidence in the result"
+    },
+    "disclaimer": "This is an automated analysis. The results are not 100% accurate and should be used as a supplementary tool for decision making."
+}

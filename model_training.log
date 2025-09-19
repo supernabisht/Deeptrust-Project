@@ -1,0 +1,189 @@
+2025-09-20 01:32:38,335 - __main__ - INFO - Initializing model trainer...
+2025-09-20 01:32:42,172 - optimized_model_trainer_clean - INFO - Model trainer initialized. Saving artifacts to: C:\Users\bisht\OneDrive\Desktop\deeptrust model\enhanced_models\artifacts
+2025-09-20 01:32:42,172 - __main__ - INFO - Loading data from consolidated_dataset_20250917_091948.csv...
+2025-09-20 01:32:42,172 - optimized_model_trainer_clean - INFO - Loading data from consolidated_dataset_20250917_091948.csv
+2025-09-20 01:32:42,213 - optimized_model_trainer_clean - INFO - Data loaded: 1000 samples, 85 features
+2025-09-20 01:32:42,215 - optimized_model_trainer_clean - INFO - Train size: 800, Test size: 200
+2025-09-20 01:32:42,217 - optimized_model_trainer_clean - INFO - Class distribution (train): {1: 400, 0: 400}
+2025-09-20 01:32:42,217 - __main__ - INFO - Preprocessing data...
+2025-09-20 01:32:42,217 - optimized_model_trainer_clean - INFO - Preprocessing data...
+2025-09-20 01:32:42,261 - __main__ - INFO - Starting model training...
+2025-09-20 01:32:42,261 - optimized_model_trainer_clean - INFO - Starting model training...
+2025-09-20 01:32:42,261 - optimized_model_trainer_clean - INFO - 
+Training xgb...
+2025-09-20 01:32:46,733 - optimized_model_trainer_clean - ERROR - Error training xgb: 
+All the 5 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\model_selection\_validation.py", line 859, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\sklearn.py", line 1490, in fit
+    self._Booster = train(
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\training.py", line 186, in train
+    if cb_container.after_iteration(bst, i, dtrain, evals):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\callback.py", line 247, in after_iteration
+    ret = any(c.after_iteration(model, epoch, self.history)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\callback.py", line 247, in <genexpr>
+    ret = any(c.after_iteration(model, epoch, self.history)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\callback.py", line 412, in after_iteration
+    assert len(evals_log.keys()) >= 1, msg
+AssertionError: Must have at least 1 validation dataset for early stopping.
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\optimized_model_trainer_clean.py", line 285, in train_models
+    cv_scores = cross_val_score(model, X_train, y_train, cv=cv, scoring='roc_auc')
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\model_selection\_validation.py", line 677, in cross_val_score
+    cv_results = cross_validate(
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\model_selection\_validation.py", line 419, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\model_selection\_validation.py", line 505, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 5 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\model_selection\_validation.py", line 859, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\sklearn.py", line 1490, in fit
+    self._Booster = train(
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\training.py", line 186, in train
+    if cb_container.after_iteration(bst, i, dtrain, evals):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\callback.py", line 247, in after_iteration
+    ret = any(c.after_iteration(model, epoch, self.history)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\callback.py", line 247, in <genexpr>
+    ret = any(c.after_iteration(model, epoch, self.history)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\callback.py", line 412, in after_iteration
+    assert len(evals_log.keys()) >= 1, msg
+AssertionError: Must have at least 1 validation dataset for early stopping.
+
+2025-09-20 01:32:46,753 - optimized_model_trainer_clean - INFO - 
+Training lgbm...
+2025-09-20 01:32:54,147 - optimized_model_trainer_clean - INFO - lgbm trained in 7.39s
+2025-09-20 01:32:54,147 - optimized_model_trainer_clean - INFO - Mean CV ROC-AUC: 0.9933 (±0.0031)
+2025-09-20 01:32:54,147 - optimized_model_trainer_clean - INFO - 
+Training catboost...
+2025-09-20 01:33:56,322 - optimized_model_trainer_clean - INFO - catboost trained in 62.17s
+2025-09-20 01:33:56,323 - optimized_model_trainer_clean - INFO - Mean CV ROC-AUC: 0.9955 (±0.0013)
+2025-09-20 01:33:56,323 - optimized_model_trainer_clean - INFO - 
+Training rf...
+2025-09-20 01:34:05,255 - optimized_model_trainer_clean - INFO - rf trained in 8.93s
+2025-09-20 01:34:05,256 - optimized_model_trainer_clean - INFO - Mean CV ROC-AUC: 0.9950 (±0.0029)
+2025-09-20 01:34:05,256 - optimized_model_trainer_clean - INFO - 
+Training stacking...
+2025-09-20 01:34:15,696 - optimized_model_trainer_clean - ERROR - Error training stacking: Must have at least 1 validation dataset for early stopping.
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\joblib\externals\loky\process_executor.py", line 463, in _process_worker
+    r = call_item()
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\joblib\externals\loky\process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\joblib\parallel.py", line 589, in __call__
+    return [func(*args, **kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\joblib\parallel.py", line 589, in <listcomp>
+    return [func(*args, **kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\utils\parallel.py", line 147, in __call__
+    return self.function(*args, **kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\ensemble\_base.py", line 39, in _fit_single_estimator
+    estimator.fit(X, y, **fit_params)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\sklearn.py", line 1490, in fit
+    self._Booster = train(
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\training.py", line 186, in train
+    if cb_container.after_iteration(bst, i, dtrain, evals):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\callback.py", line 247, in after_iteration
+    ret = any(c.after_iteration(model, epoch, self.history)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\callback.py", line 247, in <genexpr>
+    ret = any(c.after_iteration(model, epoch, self.history)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\xgboost\callback.py", line 412, in after_iteration
+    assert len(evals_log.keys()) >= 1, msg
+AssertionError: Must have at least 1 validation dataset for early stopping.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\optimized_model_trainer_clean.py", line 281, in train_models
+    model.fit(X_train, y_train, **fit_params)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\ensemble\_stacking.py", line 706, in fit
+    return super().fit(X, y_encoded, **fit_params)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\base.py", line 1365, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\ensemble\_stacking.py", line 211, in fit
+    self.estimators_ = Parallel(n_jobs=self.n_jobs)(
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\sklearn\utils\parallel.py", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "C:\Users\bisht\OneDrive\Desktop\deeptrust model\deeptrust_env\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+AssertionError: Must have at least 1 validation dataset for early stopping.
+2025-09-20 01:34:15,757 - optimized_model_trainer_clean - INFO - 
+Best model: catboost (ROC-AUC: 0.9955)
+2025-09-20 01:34:15,757 - __main__ - INFO - Evaluating models on test set...
+2025-09-20 01:34:15,757 - optimized_model_trainer_clean - INFO - 
+Evaluating models on test set...
+2025-09-20 01:34:15,796 - optimized_model_trainer_clean - INFO - 
+lgbm Test Metrics:
+2025-09-20 01:34:15,798 - optimized_model_trainer_clean - INFO - Accuracy: 0.9650
+2025-09-20 01:34:15,798 - optimized_model_trainer_clean - INFO - Precision: 0.9650
+2025-09-20 01:34:15,798 - optimized_model_trainer_clean - INFO - Recall: 0.9650
+2025-09-20 01:34:15,798 - optimized_model_trainer_clean - INFO - F1-Score: 0.9650
+2025-09-20 01:34:15,799 - optimized_model_trainer_clean - INFO - ROC-AUC: 0.9950
+2025-09-20 01:34:18,837 - optimized_model_trainer_clean - INFO - 
+catboost Test Metrics:
+2025-09-20 01:34:18,837 - optimized_model_trainer_clean - INFO - Accuracy: 0.9700
+2025-09-20 01:34:18,837 - optimized_model_trainer_clean - INFO - Precision: 0.9700
+2025-09-20 01:34:18,837 - optimized_model_trainer_clean - INFO - Recall: 0.9700
+2025-09-20 01:34:18,837 - optimized_model_trainer_clean - INFO - F1-Score: 0.9700
+2025-09-20 01:34:18,837 - optimized_model_trainer_clean - INFO - ROC-AUC: 0.9953
+2025-09-20 01:34:20,248 - optimized_model_trainer_clean - INFO - 
+rf Test Metrics:
+2025-09-20 01:34:20,248 - optimized_model_trainer_clean - INFO - Accuracy: 0.9550
+2025-09-20 01:34:20,248 - optimized_model_trainer_clean - INFO - Precision: 0.9550
+2025-09-20 01:34:20,250 - optimized_model_trainer_clean - INFO - Recall: 0.9550
+2025-09-20 01:34:20,250 - optimized_model_trainer_clean - INFO - F1-Score: 0.9550
+2025-09-20 01:34:20,250 - optimized_model_trainer_clean - INFO - ROC-AUC: 0.9928
+2025-09-20 01:34:21,659 - __main__ - INFO - Saving trained models...
+2025-09-20 01:34:21,799 - optimized_model_trainer_clean - INFO - Saved lgbm model to C:\Users\bisht\OneDrive\Desktop\deeptrust model\enhanced_models\trained_models\lgbm_model.joblib
+2025-09-20 01:34:21,809 - optimized_model_trainer_clean - INFO - Saved catboost model to C:\Users\bisht\OneDrive\Desktop\deeptrust model\enhanced_models\trained_models\catboost_model.joblib
+2025-09-20 01:34:22,183 - optimized_model_trainer_clean - INFO - Saved rf model to C:\Users\bisht\OneDrive\Desktop\deeptrust model\enhanced_models\trained_models\rf_model.joblib
+2025-09-20 01:34:22,183 - __main__ - INFO - 
+Training and evaluation completed successfully!
+2025-09-20 01:34:22,183 - __main__ - INFO - Models saved to: enhanced_models
+2025-09-20 01:34:22,183 - __main__ - INFO - 
+Best model: catboost
+2025-09-20 01:34:22,183 - __main__ - INFO - Mean CV ROC-AUC: 0.9955
+2025-09-20 01:34:22,186 - __main__ - INFO - Test ROC-AUC: 0.9953

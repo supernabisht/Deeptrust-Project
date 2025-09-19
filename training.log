@@ -1,0 +1,28 @@
+2025-09-19 23:58:58,887 - __main__ - INFO - 
+================================================================================
+2025-09-19 23:58:58,887 - __main__ - INFO - Starting Model Training
+2025-09-19 23:58:58,887 - __main__ - INFO - ================================================================================
+2025-09-19 23:58:58,887 - __main__ - INFO - Loading training and test data...
+2025-09-19 23:58:58,888 - __main__ - INFO - Loading preprocessed data...
+2025-09-19 23:58:58,888 - __main__ - INFO - Directory created/verified: data/processed
+2025-09-19 23:58:58,889 - __main__ - INFO - Directory created/verified: models
+2025-09-19 23:58:58,889 - __main__ - INFO - Directory created/verified: reports
+2025-09-19 23:58:58,894 - __main__ - INFO - Directory created/verified: logs
+2025-09-19 23:58:58,894 - __main__ - INFO - Loading training and test features...
+2025-09-19 23:58:58,918 - __main__ - INFO - X_train shape: (800, 84)
+2025-09-19 23:58:58,918 - __main__ - INFO - X_test shape: (200, 84)
+2025-09-19 23:58:58,918 - __main__ - INFO - Number of features: 84
+2025-09-19 23:58:58,918 - __main__ - INFO - Loading target variables...
+2025-09-19 23:58:58,923 - __main__ - INFO - y_train shape: (800,)
+2025-09-19 23:58:58,923 - __main__ - INFO - y_test shape: (200,)
+2025-09-19 23:58:58,923 - __main__ - INFO - y_train - Min: -2.0278, Max: 1.9226, Mean: 0.0143
+2025-09-19 23:58:58,923 - __main__ - INFO - y_test - Min: -1.4816, Max: 1.5603, Mean: 0.0026
+2025-09-19 23:58:58,926 - __main__ - INFO - Initializing model trainer...
+2025-09-19 23:58:58,926 - __main__ - INFO - Preparing data for cross-validation...
+2025-09-19 23:58:58,926 - __main__ - INFO - Combined data - X shape: (1000, 84), y shape: (1000,)
+2025-09-19 23:58:58,926 - __main__ - INFO - 
+=== Starting Model Training ===
+2025-09-19 23:58:58,926 - __main__ - INFO - Feature names: ['mfcc_1_mean', 'mfcc_1_std', 'mfcc_2_mean', 'mfcc_2_std', 'mfcc_3_mean']... (total: 84 features)
+2025-09-19 23:58:58,926 - __main__ - INFO - Training ensemble model...
+2025-09-19 23:59:09,515 - __main__ - INFO - 
+Training completed in 0.18 minutes

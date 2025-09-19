@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-09-16T17:04:18.962572",
+  "video_file": "my_video.mp4",
+  "analysis_results": {
+    "ultimate_prediction": "Prediction: REAL",
+    "confidence": 0.735,
+    "probabilities": {
+      "FAKE": 0.265,
+      "REAL": 0.735
+    }
+  },
+  "errors_encountered": [],
+  "pipeline_status": "completed"
+}

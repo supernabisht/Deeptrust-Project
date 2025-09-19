@@ -1,0 +1,19 @@
+{
+    "timestamp": "20250919_110457",
+    "result": "REAL",
+    "explanation": "The analysis suggests this is a genuine video with 0.0% confidence. However, the confidence is not very high. Further verification is recommended.",
+    "confidence_score": 0.0,
+    "details": {
+        "is_ai_generated": false,
+        "real_probability": 100.0,
+        "fake_probability": 0.0,
+        "decision_threshold": 50.0
+    },
+    "metadata": {
+        "model": "Enhanced DeepTrust Model",
+        "version": "1.1",
+        "analysis_type": "Deepfake Detection",
+        "confidence_interpretation": "Higher values indicate stronger confidence in the result"
+    },
+    "disclaimer": "This is an automated analysis. The results are not 100% accurate and should be used as a supplementary tool for decision making."
+}

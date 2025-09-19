@@ -1,0 +1,6 @@
+{
+  "model_type": "classifier",
+  "feature_names": null,
+  "model_path": "models/optimized_deepfake_model.pkl",
+  "load_time": 0.2646312713623047
+}
